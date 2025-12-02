@@ -17,12 +17,6 @@ def part_one(input):
 
 
 def part_two(input):
-    """
-    - repeating part not longer than half
-    - idea: take first half of id, check if it repeats in rest of id
-      - remove series from rest of id as long as possible -> if len(rest of id) == 0 -> invalid id
-      - if not match found, move last character of series to front of rest of id and try again
-    """
     invalid_id_sum = 0
     id_ranges = input[0].split(",")
     
