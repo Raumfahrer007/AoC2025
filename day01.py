@@ -36,13 +36,13 @@ def count_zeros(starting_position, instructions):
 def part_one(input):
     _, zero_stop = count_zeros(50, input)
         
-    print(zero_stop)
+    print(f"Standing on zero: {zero_stop} times")
 
 
 def part_two(input):
     zero_pass, zero_stop = count_zeros(50, input)
         
-    print(zero_pass + zero_stop)
+    print(f"Passing zero: {zero_pass + zero_stop} times")
 
 
 data = open("day01Input.txt", "r")
